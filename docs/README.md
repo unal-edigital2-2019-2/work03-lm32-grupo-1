@@ -1,2 +1,12 @@
-## Aquí se debe  documentar todo el proceso del proyecto acorde a cada paquete de trabajo 
-## 555
+# Proyecto Electrónica Digital II 
+## Soc
+### LM32
+### UART
+### WB
+### Módulo verilog
+#### Módulo clock
+#### Módulo RAM
+#### Módulo cam_read
+#### Módulo Analyzer
+### Configuración de la cámara
+
