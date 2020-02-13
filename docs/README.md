@@ -5,6 +5,7 @@
 ### WB
 ### Módulo verilog
 #### Módulo clock
+Este módulo bla bla bla...
 #### Módulo RAM
 #### Módulo cam_read
 #### Módulo Analyzer
