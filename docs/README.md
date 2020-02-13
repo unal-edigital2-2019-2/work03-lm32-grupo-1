@@ -18,9 +18,10 @@ Este módulo es el encargado de recibir los datos en formato 332 y almacenarlos 
 El módulo Analyzer pide información a la RAM y la procesa devolviendo que componente RGB es el predominante en la foto tomada y es conectado al Wishbone para poder ser leído por el procesador.  
 
 ## Módulo test_cam
-Este módulo conecta todos
+Este módulo instancia los cuatro módulos anteriores y conecta sus salidas al wishbone para ser usadas por el procesador
 
 ## LM32
+El procesador LM32 es el maestro que recibe señales de status de la cámara y de 
 
 ## UART
 
