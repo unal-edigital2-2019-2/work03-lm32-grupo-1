@@ -17,7 +17,16 @@ Los siguientes 4 conectores corresponden a señales de sincronización de ldea c
 
 
 ## Configuración de la cámara
-La cámara trae incluido un procesamiento de la imagen que captura lo cual le permite enviar la imagen en diferentes formatos...
+La cámara trae incluido un procesamiento de la imagen que captura lo cual le permite enviar la imagen en diferentes formatos, entre los antes mencionados,además de permitir cambiar el número de bytes muestrados por la cámara para redimensionar la imagen y modificar su ganancia relativa a diferentes valores de color para conseguir una mejor definición. Para alterar estos registros se empleó el código de arduino del archivo [OV7670_config.ino](https://github.com/unal-edigital2-2019-2/work03-lm32-grupo-1/blob/master/SW_arduino/OV7670_config/OV7670_config.ino).
+
+Entre ellos cabe destacar los siguientes registros:
+
+- 12-COM7: para la configuración del fomato de imagen QCIF en RGB.
+- 11-CLKRC: para configurar la cámara con el clock externo.
+- 0C-COM3: para habilitar el escalamiento de imagen.
+- 40-COM15: para configurar la salida en formato RGB 565.
+- 18-HSTOP: para controlar la señal Hstop, sin la cual la imagen se desconfigura.
+
 
 ## Hardware
 
@@ -54,7 +63,7 @@ Además de la señal res, que es la que se conecta al wishbone y para ser leida 
 ![DIAGRAMA](./figs/Analyzer_Block.jpeg)
 
 ### Módulo test_cam
-Este módulo instancia los cuatro módulos anteriores y conecta sus salidas al wishbone para ser usadas por el procesador.
+Este módulo funciona como el bloque superior de los bloques en verilog, este instancia los cuatro módulos anteriores, conectandolos entre sí, así como sus salidas al wishbone para ser usadas por el procesador.
 
 ![DIAGRAMA](./figs/Test_Block.jpeg)
 
@@ -110,7 +119,7 @@ En este proyecto el uso de la UART es exclusivo para la visualización serial de
 
 ## WB
 
-El wishbone es un bus de datos que conecta los perifericos del SoC. Esto con la finalidad de hacer que el procesador vea a los perifericos como registros en memoria, el mapeo de los periféricos en la memoria se muestra a continuación:
+El wishbone es un bus de datos que conecta los perifericos del SoC. Esto con la finalidad de hacer que el procesador vea a los periféricos como registros en memoria, el mapeo de los periféricos en la memoria se muestra a continuación:
 
 ![DIAGRAMA](./figs/WB_MemMap.jpeg)
 
