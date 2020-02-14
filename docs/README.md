@@ -69,10 +69,11 @@ El wishbone es un bus de datos que conecta los perifericos del SoC. Esto con la 
 
 ![DIAGRAMA](./figs/WB_MemMap1.jpeg)
 
+Se puede observar que en este mapeo de memoria aparecen todas las señales que el procesador usa para comunicarse con los periféricos dentro del SoC y algunas que usa el procesador para poder cumplir sus tareas.
 ## SoC
 
 El system on chip (SoC) es el lugar donde se unen todos los periféricos y se conectan al wishbone para poder ser usador por el procesador, que los vé como memoria.
 
-El diagrama de conexión deL Soc se muestra a continuación:
+El diagrama de conexión del Soc se muestra a continuación:
 
 ![DIAGRAMA](./figs/SoC_Block.jpeg)
