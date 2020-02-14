@@ -20,8 +20,6 @@ La cámara trae incluido un procesamiento de la imagen que captura lo cual le pe
 ## Módulo clk24_25_nexys4
 Este módulo es el encargado de generar los clocks necesarios para que funcionen adecuadamente los demás módulos de verilog y envía la señal de reloj que alimenta la cámara.
 <p align="center"> <img />
-
-Fuente: https://www.iteramos.com/pregunta/34047/github-lamemd-centro-de-la-imagen
 ![DIAGRAMA](./figs/clk24_Block.jpeg)
 </p>
 
