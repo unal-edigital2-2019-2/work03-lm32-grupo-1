@@ -101,6 +101,8 @@ int main(void)
 
 ## UART
 
+En este proyecto el uso de la UART es exclusivo para la visualización serial del color después de que el procesador lo ha enviado. Esta unidad uart, funciona por interrupciones, lo que significa que el procesador no se detendrá mientras la UART esta realizando sus operaciones, sino que ésta avisará al procesador cuando halla culminado sus operación y le entregará posteriormente el resultado de esta.
+
 ## WB
 
 El wishbone es un bus de datos que conecta los perifericos del SoC. Esto con la finalidad de hacer que el procesador vea a los perifericos como registros en memoria, el mapeo de los periféricos en la memoria se muestra a continuación:
