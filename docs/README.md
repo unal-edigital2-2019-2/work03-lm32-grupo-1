@@ -22,7 +22,7 @@ Este módulo es el encargado de generar los clocks necesarios para que funcionen
 
 <p align="center">
 ![DIAGRAMA](./figs/clk24_Block.jpeg)
-</p>
+
 
 ## Módulo cam_read
 Este es el módulo encargado del procesamiento de los datos y las señales de sincronización de la cámara para poder leer los datos enviados por la cámara en formato RGB 565 y enviarlos a la memoria RAM en formato 332 para su almacenamiento.
