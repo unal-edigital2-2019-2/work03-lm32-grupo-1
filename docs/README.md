@@ -33,9 +33,8 @@ El diagrama de bloques de este módulo se presenta en la siguiente gráfica, don
 
 ### Módulo cam_read
 
-Este módulo corresponde al archivo ***cam_read.v***, es el módulo encargado del procesamiento de los datos y las señales de sincronización de la cámara para poder leer los datos enviados por la cámara en formato RGB 565 y enviarlos a la memoria RAM en formato 332 para su almacenamiento. Para cumplir con dichas funciones el módulo en primer lugar evalúa las señales ***init*** e ***init_old***, que actualizan el valor de la señal ***done*** a 0 y dan inicio al ciclo de transcripción de datos registrados por la cámara al vector de salida del módulo de acuerdo con la codificación de 8 bits definida para el formato 565 y el conteo de datos adquiridos, el cual al llegar al límite de bytes registrados por la cámara hace la señal ***done*** 1 siempre y cuando esto sea al momento en que la señal ***vsync*** tiene un flanco de subida, de lo contrario ***done*** sguirá siendo cero y la señal ***error*** se hace 1.
-
-El diagrama de este módulo con sus entradas y salidas se presenta en la figura siguiente, las entradas corresponden con las señales ***href***, ***pclk***, ***vsync*** y el bus de datos (***data[7:0]***) de la cámara, además de las señales ***init*** y ***rst***. Y las salidas corresponen con el bus de datos de salida (***mem_px_data[7:0]***), la dirección de memoria (***mem_px_addr[14:0]***) y las señales ***done***, ***error*** y ***px_wr***.
+Este módulo corresponde al archivo ***cam_read.v***, es el módulo encargado del procesamiento de los datos y las señales de sincronización de la cámara para poder leer los datos enviados por la cámara en formato RGB 565 y enviarlos a la memoria RAM en formato 332 para su almacenamiento. Para tal fin se emplea una máquina de estados finitos sincronizada con ***pclk***, cuyos estados están definidos por las señales ***init***, ***init_old***, ***start***, ***vsync*** y ***vsync_old***. El primero de estos depende únicamente de **init*** e ***init_old*** y lleva a la señal ***start*** a un valor de 1, mientras que hace a la señal ***done*** igual a 0; el segundo estado asegura que no se pase al tercero hasta que la señal ***vsync*** sea cero y la señal ***vsync_old*** sea 1
+Dicha máquina cuenta con 2 estados, el primero de ellos corresponde a la transcripción de datos registrados por la cámara al vector de salida del módulo de acuerdo con la codificación de 8 bits definida para el formato 565 además de mantener la señal de escritura (***px_wr***) en 0, mientras el segundo estado pasa la señal de escritura a 1, aumenta el valor de la dirección de salida (***mem_px_addr***) y reescribe la información de los primeros bits del vector de salida (***mem_px_data[1,0]***) con la información de los bits ***mem_px_data[4,3]***.
 
 ![DIAGRAMA](./figs/read_Block.jpeg)
 
@@ -46,15 +45,20 @@ Este módulo es el encargado de recibir los datos en formato 332 y almacenarlos 
 
 
 ### Módulo Analyzer
-El módulo Analyzer pide información a la RAM y la procesa devolviendo que componente RGB es el predominante en la foto tomada y es conectado al Wishbone para poder ser leído por el procesador.  
+El módulo Analyzer pide información a la RAM y la procesa devolviendo que componente RGB es el predominante en la foto tomada y es conectado al Wishbone para poder ser leído por el procesador. 
+
+Este módulo toma como entradas un dato que es enviado desde la ram, una señal de init que indica cuando empezar la operación y un clock de 25Mhz. Cuando la señal init se activa el módulo envia a la RAM una dirección de memoria y recibe el dato de esta dirección. Al ir recorriento todos los datos de la ram este módulo va sumando los componentes en R, en G y en B de cada pixel recibido y al completar los 19200 pixeles en vía como resultado un bus de tres bits indicando cuál de los tres colores fue el que llegó a la suma mayor y por lo tanto que componente de color es el predominante en el frame.
+
+Además de la señal res, que es la que se conecta al wishbone y para ser leida por el procesador, el módulo también activa la señal de done que es la que usa el procesador para poder realizar la correcta interpretación del bus de datos res a el color RGB.
 
 ![DIAGRAMA](./figs/Analyzer_Block.jpeg)
 
 ### Módulo test_cam
-Este módulo instancia los cuatro módulos anteriores y conecta sus salidas al wishbone para ser usadas por el procesador
+Este módulo instancia los cuatro módulos anteriores y conecta sus salidas al wishbone para ser usadas por el procesador.
 
 ![DIAGRAMA](./figs/Test_Block.jpeg)
 
+Este es el módulo del cual se crea una instancia en el archivo CamMEM.py lo que sirve para posteriormente integrarse en el SoC
 
 ## LM32
 El procesador LM32 es el maestro que recibe señales de status de la cámara y de los diferentes periféricos.
