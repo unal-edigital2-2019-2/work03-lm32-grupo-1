@@ -17,11 +17,11 @@ Los siguientes 4 conectores corresponden a señales de sincronización de ldea c
 ## Configuración de la cámara
 La cámara trae incluido un procesamiento de la imagen que captura lo cual le permite enviar la imagen en diferentes formatos...
 
-## Módulo clk24_25_nexys4
+# Módulo clk24_25_nexys4
 Este módulo es el encargado de generar los clocks necesarios para que funcionen adecuadamente los demás módulos de verilog y envía la señal de reloj que alimenta la cámara.
-<p align="center"> <img />
+
 ![DIAGRAMA](./figs/clk24_Block.jpeg)
-</p>
+
 
 ## Módulo cam_read
 Este es el módulo encargado del procesamiento de los datos y las señales de sincronización de la cámara para poder leer los datos enviados por la cámara en formato RGB 565 y enviarlos a la memoria RAM en formato 332 para su almacenamiento.
