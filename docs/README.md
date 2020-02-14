@@ -4,7 +4,7 @@ A continuación se enlistan y describen los diferentes periféricos y módulos t
 
 ## Cámara OV7670
 
-![DIAGRAMA](./docs/figs/camara-ov7670.jpg)
+![DIAGRAMA](./figs/camara-ov7670.jpg)
 
 
 La cámara 0V7670 es el principal periférico externo del proyecto y la fuente de los datos a procesar por medio de Hardware y Software. Es una cámara CMOS la cuál tiene 16 conectores que funcionan de la siguiente manera:
@@ -41,4 +41,4 @@ El procesador LM32 es el maestro que recibe señales de status de la cámara y d
 
 ## SoC
 
-![DIAGRAMA](./docs/figs/SoC_Block.jpeg)
+![DIAGRAMA](./figs/SoC_Block.jpeg)
