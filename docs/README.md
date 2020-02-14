@@ -2,7 +2,9 @@
 
 A continuación se enlistan y describen los diferentes periféricos y módulos tanto de Hardaware como de Software empleados para la realización del proyecto final del curso de Electrónica Digital II.
 
-## Cámara OV7670
+## Periféricos
+
+# Cámara OV7670
 
 ![DIAGRAMA](./figs/camara-ov7670.jpg)
 
@@ -17,29 +19,35 @@ Los siguientes 4 conectores corresponden a señales de sincronización de ldea c
 ## Configuración de la cámara
 La cámara trae incluido un procesamiento de la imagen que captura lo cual le permite enviar la imagen en diferentes formatos...
 
+## Hardware
+
+A continuación se enlistan y describen los módulos de verilog empleados para la configuración de hardware por medio de la FPGA para la conexión con el periférico de la cámara y el procesamiento de sus datos de salida.
+
 # Módulo clk24_25_nexys4
-Este módulo es el encargado de generar los clocks necesarios para que funcionen adecuadamente los demás módulos de verilog y envía la señal de reloj que alimenta la cámara.
+Este módulo corresponde al archivo ***clk24_25_nexys4.v***, es el encargado de generar los clocks necesarios para que funcione adecuadamente la comunicación con la cámara y el procesamiento de la información relativa a esta por medio de los demás módulos de verilog, además de enviar la señal de reloj que alimenta la cámara. Este módulo fue generado empleando la herramienta *clocking wizard* del Core Generator de Xilinx, para facilitar el proceso de división del clock original de la FPGA, correspondiente a 100 MHz y obtener las señales de reloj de 24 y 25 MHz requeridas.
+
+El diagrama de bloques de este módulo se presenta en la siguiente gráfica, donde es posible observar sus entradas, correspondientes a la señal de reloj original y la señal de reset global; y sus salidas, correspondientes a las señales de reloj antes mencionadas y una salida LOCKED generada por el wizard.
 
 ![DIAGRAMA](./figs/clk24_Block.jpeg)
 
 
-## Módulo cam_read
+# Módulo cam_read
 Este es el módulo encargado del procesamiento de los datos y las señales de sincronización de la cámara para poder leer los datos enviados por la cámara en formato RGB 565 y enviarlos a la memoria RAM en formato 332 para su almacenamiento.
 
 ![DIAGRAMA](./figs/read_Block.jpeg)
 
-## Módulo buffer_ram_dp
+# Módulo buffer_ram_dp
 Este módulo es el encargado de recibir los datos en formato 332 y almacenarlos para su posterios envio al módulo Analizer.
 
 ![DIAGRAMA](./figs/Buffer_Block.jpeg)
 
 
-## Módulo Analyzer
+# Módulo Analyzer
 El módulo Analyzer pide información a la RAM y la procesa devolviendo que componente RGB es el predominante en la foto tomada y es conectado al Wishbone para poder ser leído por el procesador.  
 
 ![DIAGRAMA](./figs/Analyzer_Block.jpeg)
 
-## Módulo test_cam
+# Módulo test_cam
 Este módulo instancia los cuatro módulos anteriores y conecta sus salidas al wishbone para ser usadas por el procesador
 
 ![DIAGRAMA](./figs/Test_Block.jpeg)
