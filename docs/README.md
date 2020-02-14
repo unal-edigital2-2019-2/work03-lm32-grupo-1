@@ -56,7 +56,10 @@ Este módulo instancia los cuatro módulos anteriores y conecta sus salidas al w
 
 
 ## LM32
-El procesador LM32 es el maestro que recibe señales de status de la cámara y de 
+El procesador LM32 es el maestro que recibe señales de status de la cámara y de los diferentes periféricos.
+
+En el proyecto el procesador envía una señal de init al wishbone que esta conectado al módulo test_cam y esto le permite activar la captura del frame. Despues de el frame capturado, el procesador recibirá las señales de done, error y res para poder de acuerdo a estas codificar el color predominate en el frame y enviar esta información a la UART para su posterior visualización serial. Esto se realiza cargandole al procesador el siguiente programa.
+
 ```c
 int main(void)
 {
@@ -85,9 +88,6 @@ int main(void)
 				}
 			}
 		}
-        //printf("Color: %d  \n", color);
-	//printf("Done: %d  \n", done);
-	//printf("Error: %d  \n", error);
 	Cam_init_write(1);
 	wait_ms(10);
 	Cam_init_write(0);
