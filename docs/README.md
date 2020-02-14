@@ -54,7 +54,7 @@ El procesador LM32 es el maestro que recibe señales de status de la cámara y d
 
 El wishbone es un bus de datos que conecta los perifericos del SoC. Esto con la finalidad de hacer que el procesador vea a los perifericos como registros en memoria, el mapeo de los periféricos en la memoria se muestra a continuación:
 
-(poner la imagen aquí)
+![DIAGRAMA](./figs/WB_MemMap.jpeg)
 
 ## SoC
 
