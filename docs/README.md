@@ -66,6 +66,7 @@ El wishbone es un bus de datos que conecta los perifericos del SoC. Esto con la 
 
 ![DIAGRAMA](./figs/WB_MemMap.jpeg)
 
+Cada uno de estos periféricos tiene en la memoria una dirección correspondiente a sus registros de estatus y control que serán usados por el procesador. El mapeo es el siguiente:
 
 ![DIAGRAMA](./figs/WB_MemMap1.jpeg)
 
