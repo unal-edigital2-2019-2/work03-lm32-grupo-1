@@ -1,0 +1,7 @@
+INFILE=/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.ncd
+OUTFILE=/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.bit
+FAMILY=Artix7
+PART=xc7a100t-1csg324
+WORKINGDIR=/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware
+LICENSE=WebPack
+USER_INFO=210656542_0_0_533

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="PhysDesignRules" num="2288" delta="old" >The read port and write port clocks of BRAM instance, <arg fmt="%s" index="1">lm32_cpu/instruction_unit/icache/memories[0].way_0_tag_ram/Mram_mem</arg>, are using the same clock signal (synchronous clocking) with WRITE_FIRST mode specified. This configuration may encounter address collisions if the same address appears on both ports. It is suggested for this configuration to use READ_FIRST mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="2288" delta="old" >The read port and write port clocks of BRAM instance, <arg fmt="%s" index="1">lm32_cpu/load_store_unit/dcache/memories[0].way_0_tag_ram/Mram_mem</arg>, are using the same clock signal (synchronous clocking) with WRITE_FIRST mode specified. This configuration may encounter address collisions if the same address appears on both ports. It is suggested for this configuration to use READ_FIRST mode to avoid any conditions for address collision. See the FPGA Memory Resources User Guide for additional information.
+</msg>
+
+</messages>
+

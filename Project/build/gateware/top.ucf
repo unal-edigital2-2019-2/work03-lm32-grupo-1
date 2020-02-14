@@ -1,0 +1,22 @@
+NET "serial_tx" LOC=D4 | IOSTANDARD=LVCMOS33; # serial:0.tx
+NET "serial_rx" LOC=C4 | IOSTANDARD=LVCMOS33; # serial:0.rx
+NET "clk100" LOC=E3 | IOSTANDARD=LVCMOS33; # clk100:0
+NET "cpu_reset" LOC=C12 | IOSTANDARD=LVCMOS33; # cpu_reset:0
+NET "camMemory_href" LOC=F16 | IOSTANDARD=LVCMOS33; # camMemory:0.href
+NET "camMemory_pclk" LOC=E16 | IOSTANDARD=LVCMOS33; # camMemory:0.pclk
+NET "camMemory_xclk" LOC=D14 | IOSTANDARD=LVCMOS33; # camMemory:0.xclk
+NET "camMemory_vsync" LOC=F13 | IOSTANDARD=LVCMOS33; # camMemory:0.vsync
+NET "camMemory_data_in_0" LOC=C17 | IOSTANDARD=LVCMOS33; # camMemory:0.data_in_0
+NET "camMemory_data_in_1" LOC=D17 | IOSTANDARD=LVCMOS33; # camMemory:0.data_in_1
+NET "camMemory_data_in_2" LOC=D18 | IOSTANDARD=LVCMOS33; # camMemory:0.data_in_2
+NET "camMemory_data_in_3" LOC=E17 | IOSTANDARD=LVCMOS33; # camMemory:0.data_in_3
+NET "camMemory_data_in_4" LOC=E18 | IOSTANDARD=LVCMOS33; # camMemory:0.data_in_4
+NET "camMemory_data_in_5" LOC=F18 | IOSTANDARD=LVCMOS33; # camMemory:0.data_in_5
+NET "camMemory_data_in_6" LOC=G17 | IOSTANDARD=LVCMOS33; # camMemory:0.data_in_6
+NET "camMemory_data_in_7" LOC=G18 | IOSTANDARD=LVCMOS33; # camMemory:0.data_in_7
+
+NET  "camMemory_pclk" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+NET "clk100" TNM_NET = "PRDclk100";
+TIMESPEC "TSclk100" = PERIOD "PRDclk100" 10 ns HIGH 50%;

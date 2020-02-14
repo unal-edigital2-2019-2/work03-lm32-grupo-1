@@ -1,0 +1,624 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+WARNING:Xst:1583 - You are using an internal switch '-use_new_parser'.
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : MIXED
+Verilog Include Directory          : {/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl /opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config }
+
+---- Target Parameters
+Output File Name                   : "top.ngc"
+Target Device                      : xc7a100t-CSG324-1
+
+---- Source Options
+Top Module Name                    : top
+Use New Parser                     : yes
+Automatic Register Balancing       : yes
+
+---- General Options
+Optimization Goal                  : SPEED
+
+=========================================================================
+
+WARNING:Xst:29 - Optimization Effort not specified
+=========================================================================
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/Analyzer.v" into library work
+Parsing module <Analyzer>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_load_store_unit.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 63.
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" included at line 61.
+WARNING:HDLCompiler:1591 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" Line 186: Root scope declaration is not allowed in verilog 95/2K mode
+Parsing module <lm32_load_store_unit>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_debug.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 53.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_interrupt>.
+Analyzing Verilog file "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/buffer_ram_dp.v" into library work
+Parsing module <buffer_ram_dp>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 93.
+Parsing module <lm32_cpu>.
+WARNING:HDLCompiler:924 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 653: Attribute target identifier preserve_driver not found in this scope
+WARNING:HDLCompiler:924 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 652: Attribute target identifier preserve_signal not found in this scope
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_ram.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 55.
+Parsing module <lm32_ram>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_icache.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 57.
+Parsing module <lm32_icache>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_multiplier.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_multiplier>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_instruction_unit.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 71.
+Parsing module <lm32_instruction_unit>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_mc_arithmetic.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_mc_arithmetic>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dcache.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 52.
+Parsing module <lm32_dcache>.
+Analyzing Verilog file "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/test_cam.v" into library work
+Parsing module <test_cam>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_logic_op.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_logic_op>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 56.
+Parsing module <lm32_decoder>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_addsub.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 49.
+Parsing module <lm32_addsub>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dtlb.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
+Analyzing Verilog file "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/cam_read.v" into library work
+Parsing module <cam_read>.
+Analyzing Verilog file "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" into library work
+Parsing module <clk24_25_nexys4>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_itlb.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
+Analyzing Verilog file "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" into library work
+Parsing module <top>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dp_ram.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 31.
+Parsing module <lm32_dp_ram>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_shifter.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_shifter>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_adder.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_adder>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1220: Port I_LOCK_O is not connected to this instance
+
+Elaborating module <top>.
+
+Elaborating module <$unit_1>.
+WARNING:HDLCompiler:872 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 25: Using initial value of ctrl_reset_reset_w since it is never assigned
+WARNING:HDLCompiler:872 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 69: Using initial value of rom_bus_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 82: Using initial value of sram_bus_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 97: Using initial value of main_ram_bus_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 116: Using initial value of bus_wishbone_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 133: Using initial value of uart_phy_source_first since it is never assigned
+WARNING:HDLCompiler:872 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 134: Using initial value of uart_phy_source_last since it is never assigned
+WARNING:HDLCompiler:872 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 170: Using initial value of uart_tx_fifo_sink_first since it is never assigned
+WARNING:HDLCompiler:872 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 171: Using initial value of uart_tx_fifo_sink_last since it is never assigned
+WARNING:HDLCompiler:872 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 187: Using initial value of uart_tx_fifo_replace since it is never assigned
+WARNING:HDLCompiler:872 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 224: Using initial value of uart_rx_fifo_replace since it is never assigned
+WARNING:HDLCompiler:872 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 242: Using initial value of uart_reset since it is never assigned
+WARNING:HDLCompiler:872 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 254: Using initial value of timer0_update_value_w since it is never assigned
+WARNING:HDLCompiler:872 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 276: Using initial value of rst since it is never assigned
+Reading initialization file \"mem.init\".
+WARNING:HDLCompiler:1670 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1261: Signal <mem> in initial block is partially initialized.
+Reading initialization file \"mem_1.init\".
+WARNING:HDLCompiler:1670 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1281: Signal <mem_1> in initial block is partially initialized.
+Reading initialization file \"mem_2.init\".
+WARNING:HDLCompiler:1670 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1301: Signal <mem_2> in initial block is partially initialized.
+Reading initialization file \"mem_3.init\".
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 433: Assignment to uart_phy_sink_first ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 434: Assignment to uart_phy_sink_last ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 438: Assignment to uart_phy_source_ready ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 484: Assignment to uart_tx_fifo_level1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 509: Assignment to uart_rx_fifo_source_first ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 510: Assignment to uart_rx_fifo_source_last ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 514: Assignment to uart_rx_fifo_level1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 568: Assignment to rom_bus_dat_w ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 569: Assignment to rom_bus_sel ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 571: Assignment to rom_bus_we ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 572: Assignment to rom_bus_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 573: Assignment to rom_bus_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 579: Assignment to sram_bus_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 580: Assignment to sram_bus_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 586: Assignment to main_ram_bus_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 587: Assignment to main_ram_bus_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 590: Assignment to bus_wishbone_sel ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 593: Assignment to bus_wishbone_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 594: Assignment to bus_wishbone_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 617: Assignment to csrbankarray_csrbank0_done_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 618: Assignment to csrbankarray_csrbank0_done_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 619: Assignment to csrbankarray_csrbank0_error_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 620: Assignment to csrbankarray_csrbank0_error_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 621: Assignment to csrbankarray_csrbank0_res_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 622: Assignment to csrbankarray_csrbank0_res_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 629: Assignment to ctrl_reset_reset_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 633: Assignment to csrbankarray_csrbank1_bus_errors_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 634: Assignment to csrbankarray_csrbank1_bus_errors_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 635: Assignment to ctrl_storage ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 653: Assignment to timer0_update_value_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 655: Assignment to csrbankarray_csrbank2_value_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 656: Assignment to csrbankarray_csrbank2_value_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 657: Assignment to timer0_eventmanager_status_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 658: Assignment to timer0_eventmanager_status_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 675: Assignment to csrbankarray_csrbank3_txfull_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 676: Assignment to csrbankarray_csrbank3_txfull_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 677: Assignment to csrbankarray_csrbank3_rxempty_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 678: Assignment to csrbankarray_csrbank3_rxempty_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 679: Assignment to uart_eventmanager_status_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 680: Assignment to uart_eventmanager_status_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 709: Assignment to csrbankarray_sram_bus_we ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 715: Assignment to csrbankarray_sram_bus_dat_w ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 831: Result of 30-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 811: Assignment to re ignored, since the identifier is never used
+
+Elaborating module <lm32_cpu(eba_reset=32'b0)>.
+
+Elaborating module <lm32_instruction_unit(eba_reset=32'b0,associativity=1,sets=256,bytes_per_line=16,base_address=32'b0,limit=32'b01111111111111111111111111111111)>.
+
+Elaborating module <lm32_icache(associativity=1,sets=256,bytes_per_line=16,base_address=32'b0,limit=32'b01111111111111111111111111111111)>.
+
+Elaborating module <lm32_ram(data_width=32,address_width=32'sb01010)>.
+
+Elaborating module <lm32_ram(data_width=32'sb010101,address_width=32'sb01000)>.
+"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_instruction_unit.v" Line 802. $display Instruction bus error. Address: 0
+WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 910: Assignment to pc_x ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 912: Assignment to pc_w ignored, since the identifier is never used
+
+Elaborating module <lm32_decoder>.
+WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" Line 392: Assignment to op_user ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" Line 419: Assignment to multiply ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" Line 597: Result of 32-bit expression is truncated to fit in 30-bit target.
+
+Elaborating module <lm32_load_store_unit(associativity=1,sets=256,bytes_per_line=16,base_address=32'b0,limit=32'b01111111111111111111111111111111)>.
+
+Elaborating module <lm32_dcache(associativity=1,sets=256,bytes_per_line=16,base_address=32'b0,limit=32'b01111111111111111111111111111111)>.
+
+Elaborating module <lm32_adder>.
+
+Elaborating module <lm32_addsub>.
+
+Elaborating module <lm32_logic_op>.
+
+Elaborating module <lm32_shifter>.
+WARNING:HDLCompiler:413 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_shifter.v" Line 149: Result of 64-bit expression is truncated to fit in 32-bit target.
+
+Elaborating module <lm32_multiplier>.
+
+Elaborating module <lm32_mc_arithmetic>.
+
+Elaborating module <lm32_interrupt>.
+WARNING:HDLCompiler:413 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 166: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 166: Assignment to ie_csr_read_data ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 175: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 175: Assignment to ip_csr_read_data ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 176: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 176: Assignment to im_csr_read_data ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 2678: Assignment to x_result_sel_logic_x ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1318: Assignment to uart_tx_fifo_wrport_dat_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1335: Assignment to uart_rx_fifo_wrport_dat_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1016 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/test_cam.v" Line 94: Port LOCKED is not connected to this instance
+
+Elaborating module <test_cam>.
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/test_cam.v" Line 81: Assignment to CAM_pwdn ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/test_cam.v" Line 82: Assignment to CAM_reset ignored, since the identifier is never used
+
+Elaborating module <clk24_25_nexys4>.
+
+Elaborating module <BUFG>.
+
+Elaborating module <MMCME2_ADV(BANDWIDTH="OPTIMIZED",CLKOUT4_CASCADE="FALSE",COMPENSATION="ZHOLD",STARTUP_WAIT="FALSE",DIVCLK_DIVIDE=1,CLKFBOUT_MULT_F=12.0,CLKFBOUT_PHASE=0.0,CLKFBOUT_USE_FINE_PS="FALSE",CLKOUT0_DIVIDE_F=48.0,CLKOUT0_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKOUT0_USE_FINE_PS="FALSE",CLKOUT1_DIVIDE=50,CLKOUT1_PHASE=0.0,CLKOUT1_DUTY_CYCLE=0.5,CLKOUT1_USE_FINE_PS="FALSE",CLKIN1_PERIOD=10.0,REF_JITTER1=0.01)>.
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 132: Assignment to clkfboutb_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 134: Assignment to clkout0b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 136: Assignment to clkout1b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 137: Assignment to clkout2_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 138: Assignment to clkout2b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 139: Assignment to clkout3_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 140: Assignment to clkout3b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 141: Assignment to clkout4_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 142: Assignment to clkout5_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 143: Assignment to clkout6_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 155: Assignment to do_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 156: Assignment to drdy_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 162: Assignment to psdone_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 165: Assignment to clkinstopped_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 166: Assignment to clkfbstopped_unused ignored, since the identifier is never used
+
+Elaborating module <buffer_ram_dp(AW=15,DW=8)>.
+Reading initialization file \"home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/./image.men\".
+WARNING:HDLCompiler:1670 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/buffer_ram_dp.v" Line 54: Signal <ram> in initial block is partially initialized.
+
+Elaborating module <cam_read(AW=15)>.
+WARNING:HDLCompiler:413 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/cam_read.v" Line 84: Result of 16-bit expression is truncated to fit in 15-bit target.
+WARNING:HDLCompiler:413 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/cam_read.v" Line 87: Result of 16-bit expression is truncated to fit in 15-bit target.
+
+Elaborating module <Analyzer>.
+WARNING:HDLCompiler:413 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/Analyzer.v" Line 53: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/Analyzer.v" Line 83: Result of 16-bit expression is truncated to fit in 15-bit target.
+WARNING:HDLCompiler:413 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/Analyzer.v" Line 84: Result of 16-bit expression is truncated to fit in 15-bit target.
+WARNING:HDLCompiler:189 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1363: Size mismatch in connection of port <init>. Formal port size is 1-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1366: Size mismatch in connection of port <done>. Formal port size is 1-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1367: Size mismatch in connection of port <error>. Formal port size is 1-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1368: Size mismatch in connection of port <res>. Formal port size is 3-bit while actual signal size is 8-bit.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v".
+    Set property "register_balancing = no" for signal <regs0>.
+    Set property "shreg_extract = no" for signal <regs0>.
+    Set property "register_balancing = no" for signal <regs1>.
+    Set property "shreg_extract = no" for signal <regs1>.
+INFO:Xst:3210 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" line 1222: Output port <I_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" line 1222: Output port <I_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" line 1222: Output port <D_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" line 1222: Output port <D_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" line 1222: Output port <I_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" line 1222: Output port <D_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+WARNING:Xst:2999 - Signal 'mem', unconnected in block 'top', is tied to its initial value.
+WARNING:Xst:2999 - Signal 'mem_3', unconnected in block 'top', is tied to its initial value.
+    Found 8192x32-bit single-port Read Only RAM <Mram_mem> for signal <mem>.
+    Found 1024x32-bit dual-port RAM <Mram_mem_1> for signal <mem_1>.
+    Found 4096x32-bit dual-port RAM <Mram_mem_2> for signal <mem_2>.
+    Found 16x10-bit dual-port RAM <Mram_storage_1> for signal <storage_1>.
+    Found 16x10-bit dual-port RAM <Mram_storage_2> for signal <storage_2>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem_3>, simulation mismatch.
+    Found 33x8-bit single-port Read Only RAM <Mram_mem_3> for signal <mem_3>.
+    Found 32-bit register for signal <ctrl_bus_errors>.
+    Found 1-bit register for signal <rom_bus_ack>.
+    Found 1-bit register for signal <sram_bus_ack>.
+    Found 1-bit register for signal <main_ram_bus_ack>.
+    Found 1-bit register for signal <interface_we>.
+    Found 32-bit register for signal <interface_dat_w>.
+    Found 14-bit register for signal <interface_adr>.
+    Found 32-bit register for signal <bus_wishbone_dat_r>.
+    Found 1-bit register for signal <bus_wishbone_ack>.
+    Found 2-bit register for signal <counter>.
+    Found 1-bit register for signal <uart_phy_sink_ready>.
+    Found 8-bit register for signal <uart_phy_tx_reg>.
+    Found 4-bit register for signal <uart_phy_tx_bitcount>.
+    Found 1-bit register for signal <uart_phy_tx_busy>.
+    Found 1-bit register for signal <serial_tx>.
+    Found 32-bit register for signal <uart_phy_phase_accumulator_tx>.
+    Found 1-bit register for signal <uart_phy_uart_clk_txen>.
+    Found 1-bit register for signal <uart_phy_source_valid>.
+    Found 1-bit register for signal <uart_phy_rx_r>.
+    Found 1-bit register for signal <uart_phy_rx_busy>.
+    Found 4-bit register for signal <uart_phy_rx_bitcount>.
+    Found 8-bit register for signal <uart_phy_source_payload_data>.
+    Found 8-bit register for signal <uart_phy_rx_reg>.
+    Found 32-bit register for signal <uart_phy_phase_accumulator_rx>.
+    Found 1-bit register for signal <uart_phy_uart_clk_rxen>.
+    Found 1-bit register for signal <uart_tx_pending>.
+    Found 1-bit register for signal <uart_tx_old_trigger>.
+    Found 1-bit register for signal <uart_rx_pending>.
+    Found 1-bit register for signal <uart_rx_old_trigger>.
+    Found 1-bit register for signal <uart_tx_fifo_readable>.
+    Found 4-bit register for signal <uart_tx_fifo_produce>.
+    Found 4-bit register for signal <uart_tx_fifo_consume>.
+    Found 5-bit register for signal <uart_tx_fifo_level0>.
+    Found 1-bit register for signal <uart_rx_fifo_readable>.
+    Found 4-bit register for signal <uart_rx_fifo_produce>.
+    Found 4-bit register for signal <uart_rx_fifo_consume>.
+    Found 5-bit register for signal <uart_rx_fifo_level0>.
+    Found 32-bit register for signal <timer0_value>.
+    Found 32-bit register for signal <timer0_value_status>.
+    Found 1-bit register for signal <timer0_zero_pending>.
+    Found 1-bit register for signal <timer0_zero_old_trigger>.
+    Found 1-bit register for signal <grant>.
+    Found 4-bit register for signal <slave_sel_r>.
+    Found 20-bit register for signal <count>.
+    Found 32-bit register for signal <csrbankarray_interface0_bank_bus_dat_r>.
+    Found 8-bit register for signal <storage_full>.
+    Found 32-bit register for signal <csrbankarray_interface1_bank_bus_dat_r>.
+    Found 32-bit register for signal <ctrl_storage_full>.
+    Found 1-bit register for signal <csrbankarray_sel_r>.
+    Found 32-bit register for signal <csrbankarray_interface2_bank_bus_dat_r>.
+    Found 32-bit register for signal <timer0_load_storage_full>.
+    Found 32-bit register for signal <timer0_reload_storage_full>.
+    Found 1-bit register for signal <timer0_en_storage_full>.
+    Found 1-bit register for signal <timer0_eventmanager_storage_full>.
+    Found 32-bit register for signal <csrbankarray_interface3_bank_bus_dat_r>.
+    Found 2-bit register for signal <uart_eventmanager_storage_full>.
+    Found 32-bit register for signal <csrbankarray_interface4_bank_bus_dat_r>.
+    Found 32-bit register for signal <uart_phy_storage_full>.
+    Found 1-bit register for signal <regs0>.
+    Found 1-bit register for signal <regs1>.
+    Found 32-bit register for signal <memdat>.
+    Found 10-bit register for signal <memadr>.
+    Found 12-bit register for signal <memadr_1>.
+    Found 10-bit register for signal <memdat_2>.
+    Found 10-bit register for signal <memdat_4>.
+    Found 6-bit register for signal <memadr_2>.
+    Found 1-bit register for signal <int_rst>.
+    Found 5-bit subtractor for signal <uart_tx_fifo_level0[4]_GND_1_o_sub_228_OUT> created at line 942.
+    Found 5-bit subtractor for signal <uart_rx_fifo_level0[4]_GND_1_o_sub_237_OUT> created at line 964.
+    Found 32-bit subtractor for signal <timer0_value[31]_GND_1_o_sub_241_OUT> created at line 985.
+    Found 20-bit subtractor for signal <count[19]_GND_1_o_sub_245_OUT> created at line 1019.
+    Found 32-bit adder for signal <ctrl_bus_errors[31]_GND_1_o_add_183_OUT> created at line 814.
+    Found 2-bit adder for signal <counter[1]_GND_1_o_add_190_OUT> created at line 843.
+    Found 4-bit adder for signal <uart_phy_tx_bitcount[3]_GND_1_o_add_193_OUT> created at line 857.
+    Found 33-bit adder for signal <n0925> created at line 873.
+    Found 4-bit adder for signal <uart_phy_rx_bitcount[3]_GND_1_o_add_205_OUT> created at line 886.
+    Found 33-bit adder for signal <n0930> created at line 905.
+    Found 4-bit adder for signal <uart_tx_fifo_produce[3]_GND_1_o_add_221_OUT> created at line 931.
+    Found 4-bit adder for signal <uart_tx_fifo_consume[3]_GND_1_o_add_223_OUT> created at line 934.
+    Found 5-bit adder for signal <uart_tx_fifo_level0[4]_GND_1_o_add_225_OUT> created at line 938.
+    Found 4-bit adder for signal <uart_rx_fifo_produce[3]_GND_1_o_add_230_OUT> created at line 953.
+    Found 4-bit adder for signal <uart_rx_fifo_consume[3]_GND_1_o_add_232_OUT> created at line 956.
+    Found 5-bit adder for signal <uart_rx_fifo_level0[4]_GND_1_o_add_234_OUT> created at line 960.
+    Found 32-bit 4-to-1 multiplexer for signal <csrbankarray_interface0_bank_bus_adr[1]_GND_1_o_wide_mux_247_OUT> created at line 1026.
+    Found 32-bit 4-to-1 multiplexer for signal <csrbankarray_interface1_bank_bus_adr[1]_GND_1_o_wide_mux_250_OUT> created at line 1047.
+    Found 32-bit 8-to-1 multiplexer for signal <csrbankarray_interface2_bank_bus_adr[2]_GND_1_o_wide_mux_253_OUT> created at line 1066.
+    Found 32-bit 7-to-1 multiplexer for signal <csrbankarray_interface3_bank_bus_adr[2]_GND_1_o_wide_mux_257_OUT> created at line 1111.
+    Summary:
+	inferred   6 RAM(s).
+	inferred  14 Adder/Subtractor(s).
+	inferred 728 D-type flip-flop(s).
+	inferred  48 Multiplexer(s).
+Unit <top> synthesized.
+
+Synthesizing Unit <lm32_cpu>.
+    Related source file is "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v".
+        eba_reset = 32'b00000000000000000000000000000000
+        icache_associativity = 1
+        icache_sets = 256
+        icache_bytes_per_line = 16
+        icache_base_address = 32'b00000000000000000000000000000000
+        icache_limit = 32'b01111111111111111111111111111111
+        dcache_associativity = 1
+        dcache_sets = 256
+        dcache_bytes_per_line = 16
+        dcache_base_address = 32'b00000000000000000000000000000000
+        dcache_limit = 32'b01111111111111111111111111111111
+        watchpoints = 0
+        breakpoints = 0
+        interrupts = 32
+WARNING:Xst:647 - Input <I_RTY_I> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" line 845: Output port <pc_x> of the instance <instruction_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" line 845: Output port <pc_w> of the instance <instruction_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" line 953: Output port <x_result_sel_logic> of the instance <decoder> is unconnected or connected to loadless signal.
+    Found 32-bit register for signal <cc>.
+    Found 1-bit register for signal <data_bus_error_exception>.
+    Found 1-bit register for signal <valid_f>.
+    Found 1-bit register for signal <valid_d>.
+    Found 1-bit register for signal <valid_x>.
+    Found 1-bit register for signal <valid_m>.
+    Found 1-bit register for signal <valid_w>.
+    Found 32-bit register for signal <operand_0_x>.
+    Found 32-bit register for signal <operand_1_x>.
+    Found 32-bit register for signal <store_operand_x>.
+    Found 30-bit register for signal <branch_target_x>.
+    Found 1-bit register for signal <x_result_sel_csr_x>.
+    Found 1-bit register for signal <x_result_sel_mc_arith_x>.
+    Found 1-bit register for signal <x_result_sel_sext_x>.
+    Found 1-bit register for signal <x_result_sel_add_x>.
+    Found 1-bit register for signal <m_result_sel_compare_x>.
+    Found 1-bit register for signal <m_result_sel_shift_x>.
+    Found 1-bit register for signal <w_result_sel_load_x>.
+    Found 1-bit register for signal <w_result_sel_mul_x>.
+    Found 1-bit register for signal <x_bypass_enable_x>.
+    Found 1-bit register for signal <m_bypass_enable_x>.
+    Found 1-bit register for signal <write_enable_x>.
+    Found 5-bit register for signal <write_idx_x>.
+    Found 3-bit register for signal <csr_x>.
+    Found 1-bit register for signal <load_x>.
+    Found 1-bit register for signal <store_x>.
+    Found 2-bit register for signal <size_x>.
+    Found 1-bit register for signal <sign_extend_x>.
+    Found 1-bit register for signal <adder_op_x>.
+    Found 1-bit register for signal <adder_op_x_n>.
+    Found 4-bit register for signal <logic_op_x>.
+    Found 1-bit register for signal <direction_x>.
+    Found 1-bit register for signal <branch_x>.
+    Found 1-bit register for signal <branch_predict_x>.
+    Found 1-bit register for signal <branch_predict_taken_x>.
+    Found 3-bit register for signal <condition_x>.
+    Found 1-bit register for signal <scall_x>.
+    Found 1-bit register for signal <eret_x>.
+    Found 1-bit register for signal <bus_error_x>.
+    Found 1-bit register for signal <data_bus_error_exception_m>.
+    Found 1-bit register for signal <csr_write_enable_x>.
+    Found 32-bit register for signal <operand_m>.
+    Found 30-bit register for signal <branch_target_m>.
+    Found 1-bit register for signal <m_result_sel_compare_m>.
+    Found 1-bit register for signal <m_result_sel_shift_m>.
+    Found 1-bit register for signal <w_result_sel_load_m>.
+    Found 1-bit register for signal <w_result_sel_mul_m>.
+    Found 1-bit register for signal <m_bypass_enable_m>.
+    Found 1-bit register for signal <branch_m>.
+    Found 1-bit register for signal <branch_predict_m>.
+    Found 1-bit register for signal <branch_predict_taken_m>.
+    Found 1-bit register for signal <exception_m>.
+    Found 1-bit register for signal <load_m>.
+    Found 1-bit register for signal <store_m>.
+    Found 1-bit register for signal <write_enable_m>.
+    Found 5-bit register for signal <write_idx_m>.
+    Found 1-bit register for signal <condition_met_m>.
+    Found 1-bit register for signal <dflush_m>.
+    Found 32-bit register for signal <operand_w>.
+    Found 1-bit register for signal <w_result_sel_load_w>.
+    Found 1-bit register for signal <w_result_sel_mul_w>.
+    Found 5-bit register for signal <write_idx_w>.
+    Found 1-bit register for signal <write_enable_w>.
+    Found 1-bit register for signal <exception_w>.
+    Found 30-bit register for signal <memop_pc_w>.
+    Found 23-bit register for signal <eba>.
+    Found 30-bit adder for signal <branch_target_d> created at line 1573.
+    Found 32-bit adder for signal <cc[31]_GND_3_o_add_198_OUT> created at line 2549.
+    Found 32x32-bit dual-port RAM <Mram_registers> for signal <registers>.
+    Found 32-bit 3-to-1 multiplexer for signal <d_result_1> created at line 1584.
+    Found 1-bit 8-to-1 multiplexer for signal <condition_met_x> created at line 1617.
+    Found 5-bit comparator equal for signal <write_idx_x[4]_read_idx_0_d[4]_equal_3_o> created at line 1511
+    Found 5-bit comparator equal for signal <write_idx_m[4]_read_idx_0_d[4]_equal_5_o> created at line 1512
+    Found 5-bit comparator equal for signal <write_idx_w[4]_read_idx_0_d[4]_equal_7_o> created at line 1513
+    Found 5-bit comparator equal for signal <write_idx_x[4]_read_idx_1_d[4]_equal_9_o> created at line 1514
+    Found 5-bit comparator equal for signal <write_idx_m[4]_read_idx_1_d[4]_equal_11_o> created at line 1515
+    Found 5-bit comparator equal for signal <write_idx_w[4]_read_idx_1_d[4]_equal_13_o> created at line 1516
+    Found 32-bit comparator equal for signal <cmp_zero> created at line 1611
+    Found 1-bit comparator equal for signal <cmp_negative_cmp_overflow_equal_47_o> created at line 1624
+    Summary:
+	inferred   2 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred 381 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred  42 Multiplexer(s).
+Unit <lm32_cpu> synthesized.
+
+Synthesizing Unit <lm32_instruction_unit>.
+    Related source file is "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_instruction_unit.v".
+        eba_reset = 32'b00000000000000000000000000000000
+        associativity = 1
+        sets = 256
+        bytes_per_line = 16
+        base_address = 32'b00000000000000000000000000000000
+        limit = 32'b01111111111111111111111111111111
+    Found 30-bit register for signal <pc_d>.
+    Found 30-bit register for signal <pc_x>.
+    Found 30-bit register for signal <pc_m>.
+    Found 30-bit register for signal <pc_w>.
+    Found 30-bit register for signal <restart_address>.
+    Found 1-bit register for signal <i_cyc_o>.
+    Found 1-bit register for signal <i_stb_o>.
+    Found 32-bit register for signal <i_adr_o>.
+    Found 3-bit register for signal <i_cti_o>.
+    Found 1-bit register for signal <i_lock_o>.
+    Found 32-bit register for signal <icache_refill_data>.
+    Found 1-bit register for signal <icache_refill_ready>.
+    Found 1-bit register for signal <bus_error_f>.
+    Found 32-bit register for signal <instruction_d>.
+    Found 1-bit register for signal <bus_error_d>.
+    Found 30-bit register for signal <pc_f>.
+    Found 30-bit adder for signal <pc_f[31]_GND_4_o_add_11_OUT> created at line 565.
+    Found 2-bit adder for signal <i_adr_o[3]_GND_4_o_add_60_OUT> created at line 791.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 284 D-type flip-flop(s).
+	inferred  11 Multiplexer(s).
+Unit <lm32_instruction_unit> synthesized.
+
+Synthesizing Unit <lm32_icache>.
+    Related source file is "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_icache.v".
+        associativity = 1
+        sets = 256
+        bytes_per_line = 16
+        base_address = 32'b00000000000000000000000000000000
+        limit = 32'b01111111111111111111111111111111
+WARNING:Xst:647 - Input <address_a<31:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <state>.
+    Found 8-bit register for signal <flush_set>.
+    Found 30-bit register for signal <refill_address>.
+    Found 1-bit register for signal <restart_request>.
+    Found 2-bit register for signal <refill_offset>.
+    Found 1-bit register for signal <refilling>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 18                                             |
+    | Inputs             | 11                                             |
+    | Outputs            | 8                                              |
+    | Clock              | clk_i (rising_edge)                            |
+    | Reset              | rst_i (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0001                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit subtractor for signal <flush_set[7]_GND_5_o_sub_22_OUT> created at line 421.
+    Found 2-bit adder for signal <refill_offset[3]_GND_5_o_add_59_OUT> created at line 507.
+    Found 21-bit comparator equal for signal <way_match> created at line 294
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  42 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <lm32_icache> synthesized.
+
+Synthesizing Unit <lm32_ram_1>.
+    Related source file is "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_ram.v".
+        data_width = 32
+        address_width = 10
+        init_file = "NONE"
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1024x32-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 10-bit register for signal <ra>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  10 D-type flip-flop(s).
+Unit <lm32_ram_1> synthesized.
+
+Synthesizing Unit <lm32_ram_2>.
+    Related source file is "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_ram.v".
+        data_width = 21
+        address_width = 8
+        init_file = "NONE"
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 256x21-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 8-bit register for signal <ra>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <lm32_ram_2> synthesized.
+
+Synthesizing Unit <lm32_decoder>.
+    Related source file is "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v".
+    Summary:
+	inferred  14 Multiplexer(s).
+Unit <lm32_decoder> synthesized.
+
+User Interruption
+--> 
+
+
+Total memory usage is 442648 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  117 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1591" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" Line 186: Root scope declaration is not allowed in verilog 95/2K mode
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="924" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 653: Attribute target identifier <arg fmt="%s" index="1">preserve_driver</arg> not found in this scope
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="924" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 652: Attribute target identifier <arg fmt="%s" index="1">preserve_signal</arg> not found in this scope
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1220: Port <arg fmt="%s" index="1">I_LOCK_O</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 25: Using initial value of <arg fmt="%s" index="1">ctrl_reset_reset_w</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 69: Using initial value of <arg fmt="%s" index="1">rom_bus_err</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 82: Using initial value of <arg fmt="%s" index="1">sram_bus_err</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 97: Using initial value of <arg fmt="%s" index="1">main_ram_bus_err</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 116: Using initial value of <arg fmt="%s" index="1">bus_wishbone_err</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 133: Using initial value of <arg fmt="%s" index="1">uart_phy_source_first</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 134: Using initial value of <arg fmt="%s" index="1">uart_phy_source_last</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 170: Using initial value of <arg fmt="%s" index="1">uart_tx_fifo_sink_first</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 171: Using initial value of <arg fmt="%s" index="1">uart_tx_fifo_sink_last</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 187: Using initial value of <arg fmt="%s" index="1">uart_tx_fifo_replace</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 224: Using initial value of <arg fmt="%s" index="1">uart_rx_fifo_replace</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 242: Using initial value of <arg fmt="%s" index="1">uart_reset</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 254: Using initial value of <arg fmt="%s" index="1">timer0_update_value_w</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 276: Using initial value of <arg fmt="%s" index="1">rst</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1670" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1261: Signal &lt;<arg fmt="%s" index="1">mem</arg>&gt; in initial block is partially initialized.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1670" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1281: Signal &lt;<arg fmt="%s" index="1">mem_1</arg>&gt; in initial block is partially initialized.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1670" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1301: Signal &lt;<arg fmt="%s" index="1">mem_2</arg>&gt; in initial block is partially initialized.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 433: Assignment to <arg fmt="%s" index="1">uart_phy_sink_first</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 434: Assignment to <arg fmt="%s" index="1">uart_phy_sink_last</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 438: Assignment to <arg fmt="%s" index="1">uart_phy_source_ready</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 484: Assignment to <arg fmt="%s" index="1">uart_tx_fifo_level1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 509: Assignment to <arg fmt="%s" index="1">uart_rx_fifo_source_first</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 510: Assignment to <arg fmt="%s" index="1">uart_rx_fifo_source_last</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 514: Assignment to <arg fmt="%s" index="1">uart_rx_fifo_level1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 568: Assignment to <arg fmt="%s" index="1">rom_bus_dat_w</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 569: Assignment to <arg fmt="%s" index="1">rom_bus_sel</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 571: Assignment to <arg fmt="%s" index="1">rom_bus_we</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 572: Assignment to <arg fmt="%s" index="1">rom_bus_cti</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 573: Assignment to <arg fmt="%s" index="1">rom_bus_bte</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 579: Assignment to <arg fmt="%s" index="1">sram_bus_cti</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 580: Assignment to <arg fmt="%s" index="1">sram_bus_bte</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 586: Assignment to <arg fmt="%s" index="1">main_ram_bus_cti</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 587: Assignment to <arg fmt="%s" index="1">main_ram_bus_bte</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 590: Assignment to <arg fmt="%s" index="1">bus_wishbone_sel</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 593: Assignment to <arg fmt="%s" index="1">bus_wishbone_cti</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 594: Assignment to <arg fmt="%s" index="1">bus_wishbone_bte</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 617: Assignment to <arg fmt="%s" index="1">csrbankarray_csrbank0_done_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 618: Assignment to <arg fmt="%s" index="1">csrbankarray_csrbank0_done_re</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 619: Assignment to <arg fmt="%s" index="1">csrbankarray_csrbank0_error_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 620: Assignment to <arg fmt="%s" index="1">csrbankarray_csrbank0_error_re</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 621: Assignment to <arg fmt="%s" index="1">csrbankarray_csrbank0_res_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 622: Assignment to <arg fmt="%s" index="1">csrbankarray_csrbank0_res_re</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 629: Assignment to <arg fmt="%s" index="1">ctrl_reset_reset_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 633: Assignment to <arg fmt="%s" index="1">csrbankarray_csrbank1_bus_errors_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 634: Assignment to <arg fmt="%s" index="1">csrbankarray_csrbank1_bus_errors_re</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 635: Assignment to <arg fmt="%s" index="1">ctrl_storage</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 653: Assignment to <arg fmt="%s" index="1">timer0_update_value_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 655: Assignment to <arg fmt="%s" index="1">csrbankarray_csrbank2_value_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 656: Assignment to <arg fmt="%s" index="1">csrbankarray_csrbank2_value_re</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 657: Assignment to <arg fmt="%s" index="1">timer0_eventmanager_status_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 658: Assignment to <arg fmt="%s" index="1">timer0_eventmanager_status_re</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 675: Assignment to <arg fmt="%s" index="1">csrbankarray_csrbank3_txfull_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 676: Assignment to <arg fmt="%s" index="1">csrbankarray_csrbank3_txfull_re</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 677: Assignment to <arg fmt="%s" index="1">csrbankarray_csrbank3_rxempty_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 678: Assignment to <arg fmt="%s" index="1">csrbankarray_csrbank3_rxempty_re</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 679: Assignment to <arg fmt="%s" index="1">uart_eventmanager_status_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 680: Assignment to <arg fmt="%s" index="1">uart_eventmanager_status_re</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 709: Assignment to <arg fmt="%s" index="1">csrbankarray_sram_bus_we</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 715: Assignment to <arg fmt="%s" index="1">csrbankarray_sram_bus_dat_w</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 831: Result of <arg fmt="%d" index="1">30</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">14</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 811: Assignment to <arg fmt="%s" index="1">re</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 910: Assignment to <arg fmt="%s" index="1">pc_x</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 912: Assignment to <arg fmt="%s" index="1">pc_w</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" Line 392: Assignment to <arg fmt="%s" index="1">op_user</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" Line 419: Assignment to <arg fmt="%s" index="1">multiply</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" Line 597: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">30</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_shifter.v" Line 149: Result of <arg fmt="%d" index="1">64</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">32</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 166: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 166: Assignment to <arg fmt="%s" index="1">ie_csr_read_data</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 175: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 175: Assignment to <arg fmt="%s" index="1">ip_csr_read_data</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 176: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 176: Assignment to <arg fmt="%s" index="1">im_csr_read_data</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 2678: Assignment to <arg fmt="%s" index="1">x_result_sel_logic_x</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1318: Assignment to <arg fmt="%s" index="1">uart_tx_fifo_wrport_dat_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1335: Assignment to <arg fmt="%s" index="1">uart_rx_fifo_wrport_dat_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/test_cam.v" Line 94: Port <arg fmt="%s" index="1">LOCKED</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/test_cam.v" Line 81: Assignment to <arg fmt="%s" index="1">CAM_pwdn</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/test_cam.v" Line 82: Assignment to <arg fmt="%s" index="1">CAM_reset</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 132: Assignment to <arg fmt="%s" index="1">clkfboutb_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 134: Assignment to <arg fmt="%s" index="1">clkout0b_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 136: Assignment to <arg fmt="%s" index="1">clkout1b_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 137: Assignment to <arg fmt="%s" index="1">clkout2_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 138: Assignment to <arg fmt="%s" index="1">clkout2b_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 139: Assignment to <arg fmt="%s" index="1">clkout3_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 140: Assignment to <arg fmt="%s" index="1">clkout3b_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 141: Assignment to <arg fmt="%s" index="1">clkout4_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 142: Assignment to <arg fmt="%s" index="1">clkout5_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 143: Assignment to <arg fmt="%s" index="1">clkout6_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 155: Assignment to <arg fmt="%s" index="1">do_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 156: Assignment to <arg fmt="%s" index="1">drdy_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 162: Assignment to <arg fmt="%s" index="1">psdone_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 165: Assignment to <arg fmt="%s" index="1">clkinstopped_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/clk24_25_nexys4.v" Line 166: Assignment to <arg fmt="%s" index="1">clkfbstopped_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1670" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/buffer_ram_dp.v" Line 54: Signal &lt;<arg fmt="%s" index="1">ram</arg>&gt; in initial block is partially initialized.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/cam_read.v" Line 84: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">15</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/cam_read.v" Line 87: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">15</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/Analyzer.v" Line 53: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/Analyzer.v" Line 83: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">15</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/src/Analyzer.v" Line 84: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">15</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1363: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">init</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1366: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">done</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1367: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">error</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v" Line 1368: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">res</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1222</arg>: Output port &lt;<arg fmt="%s" index="3">I_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1222</arg>: Output port &lt;<arg fmt="%s" index="3">I_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1222</arg>: Output port &lt;<arg fmt="%s" index="3">D_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1222</arg>: Output port &lt;<arg fmt="%s" index="3">D_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1222</arg>: Output port &lt;<arg fmt="%s" index="3">I_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/jhonathann/Escritorio/Digital_2/Proyecto_digital_2/Project/build/gateware/top.v</arg>&quot; line <arg fmt="%s" index="2">1222</arg>: Output port &lt;<arg fmt="%s" index="3">D_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm32_cpu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2999" delta="old" >Signal &apos;<arg fmt="%s" index="1">mem</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">top</arg>&apos;, is tied to its initial value.
+</msg>
+
+<msg type="warning" file="Xst" num="2999" delta="old" >Signal &apos;<arg fmt="%s" index="1">mem_3</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">top</arg>&apos;, is tied to its initial value.
+</msg>
+
+<msg type="warning" file="Xst" num="3035" delta="old" >Index value(s) does not match array range for signal &lt;<arg fmt="%s" index="1">mem_3</arg>&gt;, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">I_RTY_I</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v</arg>&quot; line <arg fmt="%s" index="2">845</arg>: Output port &lt;<arg fmt="%s" index="3">pc_x</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">instruction_unit</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v</arg>&quot; line <arg fmt="%s" index="2">845</arg>: Output port &lt;<arg fmt="%s" index="3">pc_w</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">instruction_unit</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v</arg>&quot; line <arg fmt="%s" index="2">953</arg>: Output port &lt;<arg fmt="%s" index="3">x_result_sel_logic</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">decoder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">address_a&lt;31:12&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+</messages>
+

@@ -1,0 +1,23 @@
+Release 14.7 Drc P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu Feb 13 11:38:43 2020
+
+drc -z top.ncd top.pcf
+
+INFO:PhysDesignRules:2288 - The read port and write port clocks of BRAM
+   instance,
+   lm32_cpu/instruction_unit/icache/memories[0].way_0_tag_ram/Mram_mem, are
+   using the same clock signal (synchronous clocking) with WRITE_FIRST mode
+   specified. This configuration may encounter address collisions if the same
+   address appears on both ports. It is suggested for this configuration to use
+   READ_FIRST mode to avoid any conditions for address collision. See the FPGA
+   Memory Resources User Guide for additional information.
+INFO:PhysDesignRules:2288 - The read port and write port clocks of BRAM
+   instance, lm32_cpu/load_store_unit/dcache/memories[0].way_0_tag_ram/Mram_mem,
+   are using the same clock signal (synchronous clocking) with WRITE_FIRST mode
+   specified. This configuration may encounter address collisions if the same
+   address appears on both ports. It is suggested for this configuration to use
+   READ_FIRST mode to avoid any conditions for address collision. See the FPGA
+   Memory Resources User Guide for additional information.
+DRC detected 0 errors and 0 warnings.
