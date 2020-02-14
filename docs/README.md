@@ -57,6 +57,47 @@ Este módulo instancia los cuatro módulos anteriores y conecta sus salidas al w
 
 ## LM32
 El procesador LM32 es el maestro que recibe señales de status de la cámara y de 
+```c
+int main(void)
+{
+	irq_setmask(0);
+	irq_setie(1);
+	uart_init();
+
+	puts("\nexample   lm32-CONFIG camera"__DATE__" "__TIME__"\n");
+
+	uint8_t color = 0;
+	uint8_t done = 0;
+	uint8_t error = 0;
+
+	
+	while(1) {
+		color = Cam_res_read(); 
+		done = Cam_done_read();
+		error = Cam_error_read();
+		if(done){
+			if(!error){
+				switch (color){
+	 				case 1: printf("Azul \n"); break;
+	 				case 2: printf("Verde \n"); break;
+	 				case 4: printf("Rojo \n"); break;
+	 				case 7: printf("Ninguno \n"); break;
+				}
+			}
+		}
+        //printf("Color: %d  \n", color);
+	//printf("Done: %d  \n", done);
+	//printf("Error: %d  \n", error);
+	Cam_init_write(1);
+	wait_ms(10);
+	Cam_init_write(0);
+	wait_ms(90);
+	}
+
+	return 0;
+}
+
+```
 
 ## UART
 
