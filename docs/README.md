@@ -39,7 +39,7 @@ Dicha máquina cuenta con 2 estados, el primero de ellos corresponde a la transc
 ![DIAGRAMA](./figs/read_Block.jpeg)
 
 ### Módulo buffer_ram_dp
-Este módulo es el encargado de recibir los datos en formato 332 y almacenarlos para su posterios envio al módulo Analizer.
+Este módulo es el encargado de recibir los datos en formato 332 y almacenarlos para su posterios envio al módulo Analyzer. Toma como entradas dos clocks, uno de lectura y otro de escritura.Tiene también tiene una dirección de lectura (conectada al Analyzer) y una dirección de estcritura (Conectada a cam_read). Recibe del módulo cam_read una señal que habilita la escritura para asegurarse de escribir en la memoria cuando ya se tenga adquirido un dato válido.
 
 ![DIAGRAMA](./figs/Buffer_Block.jpeg)
 
