@@ -1,8 +1,5 @@
 # Proyecto Electrónica Digital II
 
-El objetivo del proyecto es usar el módulo 0V7670 para capturar una imagen la cuál después de su debido procesamiento será enviada al procesador LM32 dentro de un system on chip (SoC) para que este por medio del periférico UART pueda determinar cuál componente de RGB es el que predomina en la imagen.
-
-
 A continuación se enlistan y describen los diferentes periféricos y módulos tanto de Hardaware como de Software empleados para la realización del proyecto final del curso de Electrónica Digital II.
 
 ## Periféricos
@@ -35,7 +32,9 @@ El diagrama de bloques de este módulo se presenta en la siguiente gráfica, don
 
 
 ### Módulo cam_read
-Este es el módulo encargado del procesamiento de los datos y las señales de sincronización de la cámara para poder leer los datos enviados por la cámara en formato RGB 565 y enviarlos a la memoria RAM en formato 332 para su almacenamiento.
+
+Este módulo corresponde al archivo ***cam_read.v***, es el módulo encargado del procesamiento de los datos y las señales de sincronización de la cámara para poder leer los datos enviados por la cámara en formato RGB 565 y enviarlos a la memoria RAM en formato 332 para su almacenamiento. Para tal fin se emplea una máquina de estados finitos sincronizada con ***pclk***, cuyos estados están definidos por las señales ***init***, ***init_old***, ***start***, ***vsync*** y ***vsync_old***. El primero de estos depende únicamente de **init*** e ***init_old*** y lleva a la señal ***start*** a un valor de 1, mientras que hace a la señal ***done*** igual a 0; el segundo estado asegura que no se pase al tercero hasta que la señal ***vsync*** sea cero y la señal ***vsync_old*** sea 1
+Dicha máquina cuenta con 2 estados, el primero de ellos corresponde a la transcripción de datos registrados por la cámara al vector de salida del módulo de acuerdo con la codificación de 8 bits definida para el formato 565 además de mantener la señal de escritura (***px_wr***) en 0, mientras el segundo estado pasa la señal de escritura a 1, aumenta el valor de la dirección de salida (***mem_px_addr***) y reescribe la información de los primeros bits del vector de salida (***mem_px_data[1,0]***) con la información de los bits ***mem_px_data[4,3]***.
 
 ![DIAGRAMA](./figs/read_Block.jpeg)
 
@@ -67,11 +66,9 @@ El wishbone es un bus de datos que conecta los perifericos del SoC. Esto con la 
 
 ![DIAGRAMA](./figs/WB_MemMap.jpeg)
 
-Cada uno de estos espacios de memoria tiene el mapeo de sus señales de estatus y control que son las que finalmente usa el procesador. Este mapeo es el siguiente:
 
-(AQUI!!!)
+![DIAGRAMA](./figs/WB_MemMap1.jpeg)
 
-Se observa en este mapeo de memoria las señales de la UART y los módulos de hardware juntos con otros registros que necesita el procesador para llevar a cabo sus tareas.
 ## SoC
 
 El system on chip (SoC) es el lugar donde se unen todos los periféricos y se conectan al wishbone para poder ser usador por el procesador, que los vé como memoria.
