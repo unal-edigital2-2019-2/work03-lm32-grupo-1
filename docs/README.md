@@ -1,5 +1,8 @@
 # Proyecto Electrónica Digital II
 
+El objetivo del proyecto es usar el módulo 0V7670 para capturar una imagen la cuál después de su debido procesamiento será enviada al procesador LM32 dentro de un system on chip (SoC) para que este por medio del periférico UART pueda determinar cuál componente de RGB es el que predomina en la imagen.
+
+
 A continuación se enlistan y describen los diferentes periféricos y módulos tanto de Hardaware como de Software empleados para la realización del proyecto final del curso de Electrónica Digital II.
 
 ## Periféricos
@@ -63,6 +66,10 @@ El procesador LM32 es el maestro que recibe señales de status de la cámara y d
 El wishbone es un bus de datos que conecta los perifericos del SoC. Esto con la finalidad de hacer que el procesador vea a los perifericos como registros en memoria, el mapeo de los periféricos en la memoria se muestra a continuación:
 
 ![DIAGRAMA](./figs/WB_MemMap.jpeg)
+
+Cada uno de estos espacios de memoria tiene el mapeo de sus señales de estatus y control que son las que finalmente usa el procesador. Este mapero es el siguiente:
+
+
 
 ## SoC
 
