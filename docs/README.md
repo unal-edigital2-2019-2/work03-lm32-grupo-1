@@ -20,17 +20,30 @@ La cámara trae incluido un procesamiento de la imagen que captura lo cual le pe
 ## Módulo clk24_25_nexys4
 Este módulo es el encargado de generar los clocks necesarios para que funcionen adecuadamente los demás módulos de verilog y envía la señal de reloj que alimenta la cámara.
 
+![DIAGRAMA](./figs/clk24_Block.jpeg)
+
+
 ## Módulo cam_read
 Este es el módulo encargado del procesamiento de los datos y las señales de sincronización de la cámara para poder leer los datos enviados por la cámara en formato RGB 565 y enviarlos a la memoria RAM en formato 332 para su almacenamiento.
+
+![DIAGRAMA](./figs/read_Block.jpeg)
 
 ## Módulo buffer_ram_dp
 Este módulo es el encargado de recibir los datos en formato 332 y almacenarlos para su posterios envio al módulo Analizer.
 
+![DIAGRAMA](./figs/Buffer_Block.jpeg)
+
+
 ## Módulo Analyzer
 El módulo Analyzer pide información a la RAM y la procesa devolviendo que componente RGB es el predominante en la foto tomada y es conectado al Wishbone para poder ser leído por el procesador.  
 
+![DIAGRAMA](./figs/Analyzer_Block.jpeg)
+
 ## Módulo test_cam
 Este módulo instancia los cuatro módulos anteriores y conecta sus salidas al wishbone para ser usadas por el procesador
+
+![DIAGRAMA](./figs/Test_Block.jpeg)
+
 
 ## LM32
 El procesador LM32 es el maestro que recibe señales de status de la cámara y de 
