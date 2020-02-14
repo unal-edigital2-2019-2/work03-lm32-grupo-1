@@ -19,10 +19,11 @@ La cámara trae incluido un procesamiento de la imagen que captura lo cual le pe
 
 ## Módulo clk24_25_nexys4
 Este módulo es el encargado de generar los clocks necesarios para que funcionen adecuadamente los demás módulos de verilog y envía la señal de reloj que alimenta la cámara.
+<p align="center"> <img />
 
-<p align="center">
+Fuente: https://www.iteramos.com/pregunta/34047/github-lamemd-centro-de-la-imagen
 ![DIAGRAMA](./figs/clk24_Block.jpeg)
-
+</p>
 
 ## Módulo cam_read
 Este es el módulo encargado del procesamiento de los datos y las señales de sincronización de la cámara para poder leer los datos enviados por la cámara en formato RGB 565 y enviarlos a la memoria RAM en formato 332 para su almacenamiento.
