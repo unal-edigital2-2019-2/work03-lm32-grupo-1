@@ -17,6 +17,10 @@ Los siguientes 4 conectores corresponden a señales de sincronización de ldea c
 ## Configuración de la cámara
 La cámara trae incluido un procesamiento de la imagen que captura lo cual le permite enviar la imagen en diferentes formatos...
 
+## Hardware
+
+A continuación se enlistan y describen los módulos de verilog empleados para la configuración de hardware por medio de la FPGA para la conexión con el periférico de la cámara y el procesamiento de sus datos de salida.
+
 # Módulo clk24_25_nexys4
 Este módulo es el encargado de generar los clocks necesarios para que funcionen adecuadamente los demás módulos de verilog y envía la señal de reloj que alimenta la cámara.
 
